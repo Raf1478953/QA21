@@ -1,0 +1,106 @@
+.blog_maintitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+.bread-crumbs {
+  display: flex;
+  padding: 0;
+}
+
+.bread-crumbs li {
+  padding-right: 20px;
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.bread-crumbs li:last-child {
+  opacity: 0.5;
+}
+
+/* list article */
+
+h2 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 31px;
+}
+
+.list_article {
+  display: flex;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.list_article li {
+  width: 33%;
+}
+
+.list_article li:hover h2 {
+  text-decoration: underline;
+}
+
+.article_data {
+  opacity: 0.5;
+}
+
+.article_annotation {
+  font-size: 18px;
+  line-height: 25px;
+  padding-right: 3px;
+}
+
+/* .wrapper_pagination */
+
+.wrapper_pagination {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 67px;
+  margin-top: 53px;
+}
+
+.wrapper_pagination ul {
+  display: flex;
+  padding-left: 100px;
+}
+
+.pagination_page {
+  margin-right: 67px;
+}
+
+.pagination_page:hover {
+  opacity: 0.3;
+}
+
+.pagination_page a {
+  font-family: Montserrat;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.pagination_page:first-child a {
+  color: rgba(194, 153, 116, 1);
+}
+
+.pagination_button-nxtpage {
+  stroke:#1E0606;
+  stroke-width: 4px;
+  
+}
+
+.pagination_button-nxtpage:hover  {
+  stroke: rgb(248, 143, 51) ;
+  stroke-width: 4px;
+  cursor: pointer;
+  
+}

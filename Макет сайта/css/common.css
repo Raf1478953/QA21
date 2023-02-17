@@ -1,0 +1,301 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Crimson Text", serif; 
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+}
+
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  color: aliceblue;
+  background-color: black;
+  border: none;
+}
+
+button:hover {
+  background-color: rgba(194, 153, 116, 1);
+}
+
+button:active {
+  background-color: rgba(207, 175, 145, 1);
+}
+button:disabled {
+  background-color: rgba(199, 193, 193, 1);
+}
+
+a {
+  text-decoration: none;
+  color: #1e0606;
+}
+
+/* header */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.logo:hover {
+  opacity: 0.5;
+}
+.logo:active {
+  opacity: 0.2;
+}
+
+.navi-menu {
+  display: flex;
+  align-items: center;
+}
+
+.navi-point {
+  display: inline-block;
+  text-transform: uppercase;
+  margin-right: 20px;
+}
+
+.navi-point a:hover {
+  color: rgb(142, 130, 130);
+}
+.navi-point a:active {
+  color: rgb(210, 205, 205);
+}
+
+.about-us {
+  display: block;
+  width: 69px;
+}
+
+.search-menu {
+  display: flex;
+  align-items: center;
+}
+
+.search-contact {
+  display: flex;
+}
+
+.search {
+  background-color: transparent;
+  border: none;
+}
+.search:hover{
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.search:hover {
+  opacity: 0.5;
+}
+
+.contact {
+  display: inline-block;
+  margin-left: 23px;
+  color: #1e0606;
+}
+
+.contact:hover {
+  color: rgb(142, 130, 130);
+}
+
+.contact:active {
+  color: rgb(210, 205, 205);
+}
+
+/* footer */
+
+.footer {
+  background-color: #434343;
+  padding-top: 100px;
+}
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 32%;
+  align-items: flex-start;
+}
+
+.footer-brends a {
+  padding-right: 10px;
+}
+
+.footer-brends a:hover {
+  opacity: 0.5;
+}
+.footer-brends a:focus {
+  opacity: 0.5;
+}
+
+.subtitle-nav {
+  color: #aaaaaa;
+  width: 100%;
+  border-bottom: 1px solid;
+  border-top-color: rgba(102, 102, 102, 1);
+  padding-bottom: 23px;
+  margin-bottom: 0;
+}
+
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-top: 28px;
+  margin-top: 0;
+}
+
+.footer-point {
+  color: #ffffff;
+}
+
+.footer-point:hover {
+  opacity: 0.5;
+}
+.footer-point:focus {
+  opacity: 0.5;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 25px;
+  padding-top: 25px;
+}
+
+.email {
+  height: 40px;
+}
+
+.email:hover {
+  border: inset 1px rgba(253, 253, 253, 1);
+}
+
+
+button.email-button {
+  width: 81px;
+  height: 40px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.footer-menu li {
+  margin-bottom: 15px;
+}
+
+.company-rating {
+  display: flex;
+  max-width: 36%;
+  align-items: center;
+}
+
+.company-rating p:hover {
+  color: rgba(194, 153, 116, 1);
+}
+.company-rating p:active {
+  color: rgba(194, 153, 116, 1);
+}
+
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid;
+  border-color: #666666;
+  padding-top: 23px;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+.info {
+  max-width: 33%;
+  padding-left: 40px;
+}
+
+.design {
+  display: block;
+  max-width: 33%;
+  color: #a2a2a2;
+  margin-right: 115px;
+}
+.design:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.design:focus {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+.rating-area {
+	overflow: hidden;
+	width: 120px;
+	margin: 0 auto;
+}
+.rating-area:not(:checked) > input {
+	display: none;
+}
+.rating-area:not(:checked) > label {
+	float: right;
+	width: 20px;
+	padding: 0;
+	cursor: pointer;
+	font-size: 17px;
+	line-height: 32px;
+	color: lightgrey;
+	text-shadow: 1px 1px #bbb;
+}
+.rating-area:not(:checked) > label:before {
+	content: '★';
+}
+.rating-area > input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px #c60;
+}
+.rating-area:not(:checked) > label:hover,
+.rating-area:not(:checked) > label:hover ~ label {
+	color: gold;
+}
+.rating-area > input:checked + label:hover,
+.rating-area > input:checked + label:hover ~ label,
+.rating-area > input:checked ~ label:hover,
+.rating-area > input:checked ~ label:hover ~ label,
+.rating-area > label:hover ~ input:checked ~ label {
+	color: gold;
+	text-shadow: 1px 1px goldenrod;
+}
+.rate-area > label:active {
+	position: relative;
+}

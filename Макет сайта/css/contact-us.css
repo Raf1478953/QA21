@@ -1,0 +1,175 @@
+.contact-us_maintitle {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 49px;
+}
+
+/* bread-crumbs */
+
+.bread-crumbs {
+  display: flex;
+  padding: 0;
+}
+
+.bread-crumbs li {
+  padding-right: 20px;
+  font-family: Crimson Text;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 25px;
+}
+
+.bread-crumbs li:last-child {
+  opacity: 0.5;
+}
+
+/* contact-us_wrapper */
+
+.contact-us_wrapper {
+  display: flex;
+  margin-top: 50px;
+}
+
+.contact-us_form {
+  background-color: rgba(229, 234, 248, 1);
+  padding: 42px 40px;
+  margin-bottom: 60px;
+}
+
+input[type="text"],input[type="email"],input[type="number"] {
+  padding-top: 14px;
+    padding-bottom: 11px;
+    padding-left: 20px;
+    font-size: 18px;
+    line-height: 25px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+input:hover{
+  border: 2px solid #C29974;
+}
+
+
+
+div.form_holder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_holder label {
+  width: 48%;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+label span{
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+textarea {
+  resize: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+textarea:hover{
+  border: 2px solid #C29974;
+}
+
+.form_confirmation {
+  display: flex;
+  flex-direction: row;
+  margin-top: 22px;
+  position: relative;
+}
+
+.form_confirmation span {
+  font-size: 14px;
+  line-height: 19px;
+  margin-left: 20px;
+  padding-left: 15px;
+}
+
+.form_confirmation input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+
+
+.checkmark {
+  position: absolute;
+  height: 22px;
+  width: 23px;
+  border: 3px solid #c29974;
+  left: -20px;
+}
+
+.form_confirmation:hover input ~ .checkmark {
+  background-color: rgba(237, 222, 235, 1);
+}
+
+.form_confirmation input:checked ~ .checkmark {
+  border-color: #c29974;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.form_confirmation input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.form_confirmation .checkmark:after {
+  left: 2px;
+  top: -7px;
+  width: 12px;
+  height: 13px;
+  border: solid #c29974;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.form_button {
+  padding: 9px 22px;
+  width: 106px;
+  height: 40px;
+  font-size: 16px;
+  line-height: 22px;
+  margin-top: 23px;
+}
+
+/* contact_info */
+
+.contact_info {
+  margin-left: 120px;
+  width: 28%;
+}
+
+.contact_info p {
+  font-size: 16px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.contact_info p:last-child {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  color: #c29974;
+}
